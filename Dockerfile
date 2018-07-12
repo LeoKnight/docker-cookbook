@@ -1,6 +1,7 @@
 FROM ubuntu
 
-MAINTAINER leoknight
+# 使用阿里源
+RUN sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y nodejs npm
 
