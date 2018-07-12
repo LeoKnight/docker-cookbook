@@ -15,7 +15,6 @@ docker publish leoknight/node-demo:0.2
 version: "3"
 services:
   web:
-    # replace username/repo:tag with your name and image details
     image: leoknight/node-demo:0.2
     deploy:
       replicas: 5

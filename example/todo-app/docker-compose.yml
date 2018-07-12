@@ -1,0 +1,14 @@
+version: '3'
+container_name: todo-app
+
+services:
+
+  web:
+    build: .
+    ports:
+     - "3000:3000"
+    links:
+     - mongo
+     
+  mongo:
+    image: "mongo"

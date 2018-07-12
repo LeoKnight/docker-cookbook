@@ -2,9 +2,9 @@ FROM node
 
 WORKDIR /app
 
-ADD package.json /app
+# ADD package.json /app
 
-RUN npm install
+# RUN npm install
 
 ADD . /app
 
